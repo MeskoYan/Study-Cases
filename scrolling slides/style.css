@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+.slide1{
+    background-color:aqua;
+}
+.slide{
+    scroll-snap-align: center;
+}
+img {
+    height: 100vh;
+    width: 100vw;
+    display: block;
+}

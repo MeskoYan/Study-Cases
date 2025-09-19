@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iScroller</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/References/Favicons/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+<!--
+Ok so my objective was to make three "slides" which would scroll "smoothly" when scrolling through them.
+For this I first tought of using only 3 divs with 3 images, so i could send one div up and center another
+that however did not work well, I was having trouble using JS and didn't know of CSS scrolling capabilities
+
+I started searching and discovered about CSS snapping elements, and how it's features works
+i learned that there are already lots of elements for snapping elements the way you want
+so i started searching what i should do to have the effects i wanted
+first was taking of margins and paddings and hidding the scrollbar by setting it's width to none
+i also set scroll behavior to smooth to all elements, but if i wanted to do it separately, i saw it's advised to set html element
+to smooth, because it seems to affect the effects.
+after that it was time to setup the container, setting it to fit the viewport, i also had to set it's overflow y to scroll so it does the
+snapping correctly and set the snap properly with snap type y mandatory
+then it was time for setting the snap type of the slides properly said to the center
+and make the images fit right in the screen 
+a thing about images is that they're inline elements, so they leave space below them, for this to not happen you have to set them to display
+block
+
+and that was about it
+it ended up being really simple, but took me about 2 hours to find the correct way to do what I wanted to
+funny study
+-->
+    <div class="container">
+
+        <div class="slide slide1">
+            <img id="will_and_sean" src="/References/images/will and sean on the bench.webp" alt="Will and Sean">
+        </div>
+
+        <div class="slide slide2">
+            <img id="crosshair" src="/References/images/crosshair.png" alt="Crazy Crosshair">
+        </div>
+
+        <div class="slide" id="slide3">
+            <img id="walt_and_jesse" src="/References/images/walt and jesse.jpg" alt="Walt and Jesse">
+        </div>
+
+    </div>
+
+</body>
+</html>
