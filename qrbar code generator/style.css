@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    border: 5px solid black;
+    position: relative;
+}
+.data{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50vw;
+}
+#user_text{
+    margin-bottom: 15px;
+}
