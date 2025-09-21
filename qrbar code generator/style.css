@@ -1,21 +1,50 @@
 body{
     margin: 0;
+    padding: 0;
+    background-color: rgb(80, 80, 80);
 }
 .container{
     width: 100vw;
     height: 100vh;
-    border: 5px solid black;
+    display: flex;
     position: relative;
+    justify-content: center;
+    align-items: center;
 }
 .data{
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    position: absolute;
-    inset: 0;
-    margin: auto;
+    align-items: center;
+    justify-content: center;
+    background-image:-moz-radial-gradient(rgba(0, 128, 0, 0.322),rgba(255, 255, 0, 0.363)) ;
     width: 50vw;
+    height: 65vh;
+    padding: 40px;
+    border-radius: 7%;
 }
-#user_text{
-    margin-bottom: 15px;
+.data > input,
+.data > img,
+.data > button {
+    width: 90%;
+}
+.data > input,
+.data > button {
+    height: 50px;
+    border-radius: 5px;
+}
+.data input {
+    color: rgb(230, 230, 230);
+    background-color: rgb(59, 59, 59);
+    text-align: center;
+}
+.data button {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.404);
+}
+
+#display{
+    max-width: 200px;
+    margin: 30px 0px;
+    padding: 20px;
+    background-color: white;
 }
